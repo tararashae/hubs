@@ -17,6 +17,7 @@ export default class ChatCommandHelp extends Component {
       "fly",
       "grow",
       "shrink",
+      "stream",
       "duck",
       "debug",
       "vrstats",

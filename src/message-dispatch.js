@@ -37,13 +37,16 @@ export default class MessageDispatch {
     }
 
     const playerRig = document.querySelector("#player-rig");
-    const scales = [0.0625, 0.125, 0.25, 0.5, 1.0, 1.5, 3, 5, 7.5, 12.5];
+    const scales = [0.03125, 0.0625, 0.125, 0.25, 0.5, 1.0, 1.5, 3, 5, 7.5, 12.5, 25];
     const curScale = playerRig.object3D.scale;
     let err;
     let physicsSystem;
     const captureSystem = this.scene.systems["capture-system"];
 
     switch (command) {
+      case "stream":
+        console.log("Toggle streamer mode");
+        break;
       case "fly":
         if (playerRig.getAttribute("character-controller").fly !== true) {
           playerRig.setAttribute("character-controller", "fly", true);

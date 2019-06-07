@@ -1693,6 +1693,7 @@ class UIRoot extends Component {
                 history={this.props.history}
                 mediaSearchStore={this.props.mediaSearchStore}
                 hideSettings={() => this.setState({ showSettingsMenu: false })}
+                toggleStreaming={() => console.log("toggle streaming mode")}
                 hubChannel={this.props.hubChannel}
                 hubScene={this.props.hubScene}
                 performConditionalSignIn={this.props.performConditionalSignIn}
